@@ -58,10 +58,8 @@ def send_query(cursor, query):
 
 
 if __name__ == '__main__':
-
     print('Результат запроса 1:', get_settings_from_db())
     print('Результат запроса 2:', get_categories_from_db())
     print('Результат запроса 3:', get_bakery_meat_from_db())
     print('Результат запроса 4:', get_bakery_veg_from_db())
     print('Результат запроса 5:', get_bakery_sweet_from_db())
-

@@ -87,7 +87,6 @@ def create_element_carousel(title: str, desc: str, buttons: list, photo_id: str)
 
 
 if __name__ == '__main__':
-
     print('Меню категорий:', get_carousel_main_menu())
     print('Меню мяса', get_carousel_meat_menu())
     print('Сладкое меню', get_carousel_sweet_menu())
