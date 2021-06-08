@@ -1,9 +1,8 @@
 from vk_api import VkApi
 from vk.Chat_bot_VK.my_methods import process_message, process_button
-#from Chat_bot_vk.my_methods import process_message, process_button
 from vk_api.bot_longpoll import VkBotEventType, VkBotLongPoll
 from vk.Chat_bot_VK.data_base import get_settings_from_db
-#from Chat_bot_vk.data_base import get_settings_from_db
+
 
 
 if __name__ == '__main__':
