@@ -1,7 +1,9 @@
 from vk_api.utils import get_random_id
 from vk_api.keyboard import VkKeyboard, VkKeyboardColor
-from vk.Chat_bot_vk.elements import get_snack_event, get_carousel_main_menu
-from vk.Chat_bot_vk.elements import get_carousel_meat_menu, get_carousel_vegetable_menu, get_carousel_sweet_menu
+#from Chat_bot_vk.elements import get_snack_event, get_carousel_main_menu
+#from Chat_bot_vk.elements import get_carousel_meat_menu, get_carousel_vegetable_menu, get_carousel_sweet_menu
+from vk.Chat_bot_VK.elements import get_snack_event, get_carousel_main_menu
+from vk.Chat_bot_VK.elements import get_carousel_meat_menu, get_carousel_vegetable_menu, get_carousel_sweet_menu
 from traceback import print_exc
 
 
