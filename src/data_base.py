@@ -1,7 +1,7 @@
 import sqlite3 as sqlite
 
 
-NAME_BASE = '../bakery.db'
+NAME_BASE = '../../bakery.db'
 TABLE_TOKEN = 'Token_table'
 TABLE_CATEGORY = 'Bakery_category'
 TABLE_BAKERY_MEAT = 'Bakery_meat'

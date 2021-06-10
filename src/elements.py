@@ -1,4 +1,4 @@
-from vk.Chat_bot_VK.data_base import get_bakery_veg_from_db, get_categories_from_db, get_bakery_meat_from_db, get_bakery_sweet_from_db
+from vk.Chat_bot_VK.src.data_base import get_bakery_veg_from_db, get_categories_from_db, get_bakery_meat_from_db, get_bakery_sweet_from_db
 
 
 def get_carousel(elements: list):
