@@ -1,22 +1,25 @@
 from vk_api import VkApi
 from vk.Chat_bot_VK.src.my_methods import process_message, process_button
 from vk_api.bot_longpoll import VkBotEventType, VkBotLongPoll
-from vk.Chat_bot_VK.src.data_base import get_settings_from_db
+import json
 
 
 if __name__ == '__main__':
-    # Подключаем токен и long_poll
-    settings = get_settings_from_db()
-    if not settings:
+    try:
+        with open('../../config.json', 'r') as file:
+            settings = json.load(file)['api']
+    except Exception:
         print('НЕ УДАЛОСЬ ПОЛУЧИТЬ НАСТРОЙКИ ДЛЯ ПОДКЛЮЧЕНИЯ')
         exit(1)
 
+    print(settings)
+    # Подключаем токен и long_poll
     try:
-        session = VkApi(token=settings[0][0], api_version=settings[0][1])
+        session = VkApi(token=settings['token'], api_version=settings['version'])
         print("Старт сессии")
 
         api = session.get_api()
-        long_poll = VkBotLongPoll(session, group_id=settings[0][2])
+        long_poll = VkBotLongPoll(session, group_id=settings['group_id'])
         print("Старт long poll подключения")
 
         # Слушаем long poll(Сообщения)
